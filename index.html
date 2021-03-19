@@ -5,11 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css ">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=source+sans+pro&display=swap" rel="stylesheet">
-    <title>document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/style.css ">
+    <title>Mortal Combat</title>
 </head>
 <body>
 <div id="app" class="app">
@@ -32,16 +33,22 @@
         </div>
         <!-- /.tags -->
         <p class="description">
-            Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
+            Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только
+            сильнейший
         </p>
         <div class="button-group">
-            <button class="button button-primary">
+            <a data-fancybox href="#hidden" class="button button-primary">
                 Предзаказ фильма
-            </button>
-             <button class="button button-default">
-                 <img src="./img/play.svg" alt="Иконка play" class="button-icon">
-                 <span class="button-text">Смотреть трейлер</span>
-             </button>
+            </a>
+            <div style="display: none; width: 500px;" id="hidden">
+                <h2>Введите ваш Email для подписки</h2>
+                <input type="text" placeholder="Введите Email">
+                <button>Подписаться</button>
+            </div>
+            <a data-fancybox href="https://www.youtube.com/watch?v=fb1BF9B1MGQ" class="button button-default">
+                <img src="./img/play.svg" alt="Иконка play" class="button-icon">
+                <span class="button-text">Смотреть трейлер</span>
+            </a>
         </div>
         <!-- /.button-group -->
     </section>
@@ -52,6 +59,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
 <script src="js/jquery.vide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
